@@ -1,0 +1,7 @@
+import com.ismachat.User
+
+model {
+    User user
+}
+
+json tmpl.user(user: user)

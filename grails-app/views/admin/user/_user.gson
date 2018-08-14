@@ -1,0 +1,9 @@
+import com.ismachat.User
+
+inherits template: '/hal'
+
+model {
+    User user
+}
+
+json g.render(user, [excludes: ['password', 'products', 'activationToken']])

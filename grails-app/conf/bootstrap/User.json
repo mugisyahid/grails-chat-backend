@@ -1,0 +1,66 @@
+[
+  {
+    "username": "sysadmin@kopong.com",
+    "name": "System Administrator",
+    "password": "abc",
+    "enabled": true,
+    "accountExpired": false,
+    "accountLocked": false,
+    "passwordExpired": false,
+    "remark": "keterangan",
+    "gender": "MALE",
+    "phone": "+62857123123",
+    "imageName": "user1.png",
+    "roles": [
+      "ROLE_SYSTEM"
+    ]
+  },
+  {
+    "username": "admin@kopong.com",
+    "name": "Administrator",
+    "password": "abc",
+    "enabled": true,
+    "accountExpired": false,
+    "accountLocked": false,
+    "passwordExpired": false,
+    "remark": "keterangan jati diri1",
+    "gender": "MALE",
+    "phone": "+62851237123123",
+    "imageName": "user2.png",
+    "roles": [
+      "ROLE_ADMIN"
+    ]
+  },
+  {
+    "username": "customer@kopong.com",
+    "name": "customer",
+    "password": "abc",
+    "enabled": true,
+    "accountExpired": false,
+    "accountLocked": false,
+    "passwordExpired": false,
+    "remark": "orang ganteng",
+    "gender": "MALE",
+    "phone": "+62857123112312323",
+    "imageName": "user3.png",
+    "roles": [
+      "ROLE_CUSTOMER"
+    ]
+  },
+  {
+    "username": "userkosong@kopong.com",
+    "name": "user kosong",
+    "password": "abc",
+    "enabled": true,
+    "accountExpired": false,
+    "accountLocked": false,
+    "passwordExpired": false,
+    "remark": "user kosong teu punya nanaon",
+    "gender": "MALE",
+    "phone": "+666",
+    "imageName": "user3.png",
+    "roles": [
+      "ROLE_CUSTOMER"
+    ]
+  }
+]

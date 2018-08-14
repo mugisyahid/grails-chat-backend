@@ -1,0 +1,8 @@
+
+import com.ismachat.User
+
+model{
+    List<User> users = []
+}
+
+json tmpl.user(users ?: [])
