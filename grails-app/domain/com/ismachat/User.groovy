@@ -5,6 +5,7 @@ import com.ismachat.constant.Status
 import grails.compiler.GrailsCompileStatic
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
+import com.ismachat.UserRole
 
 @GrailsCompileStatic
 @EqualsAndHashCode(includes = 'username')
@@ -33,6 +34,11 @@ class User implements Serializable {
     //entity
     Gender gender
     Status status
+
+
+    Set<Role> getAuthorities() {
+        (UserRole.findAllByUser(this) as List<UserRole>)*.role as Set<Role>
+    }
 
 
     static constraints = {

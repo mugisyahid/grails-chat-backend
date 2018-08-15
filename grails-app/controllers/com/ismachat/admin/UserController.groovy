@@ -22,12 +22,13 @@ class UserController extends CommonController {
 
     static namespace = 'admin'
 
-    static allowedMethods = [register  : HttpMethod.POST.name(), profile: HttpMethod.POST.name(),
-                             enableUser: HttpMethod.PUT.name(), updateImage: HttpMethod.POST.name(),
+    static allowedMethods = [login  : HttpMethod.POST.name(), register  : HttpMethod.POST.name(),
+                             profile: HttpMethod.POST.name(), enableUser: HttpMethod.PUT.name(),
+                             updateImage: HttpMethod.POST.name(),
                              activate  : HttpMethod.POST.name()]
 
     UserService userService
-    ImageService imageService
+//    ImageService imageService
     EmailService emailService
     SpringSecurityService springSecurityService
 

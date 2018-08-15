@@ -28,15 +28,6 @@ class UrlMappings {
             '/user/enableUser'(controller: 'user', action: 'enableUser', method: "PUT")
             '/user/updateImage'(controller: 'user', action: 'updateImage', method: "POST")
 
-            '/store'(resources: 'store', namespace: 'admin', includes: [ACTION_INDEX, ACTION_SHOW, ACTION_UPDATE, ACTION_SAVE])
-
-            '/promo'(resources: 'promo', namespace: 'admin', includes: [ACTION_INDEX, ACTION_SHOW, ACTION_UPDATE, ACTION_SAVE])
-
-            '/product'(resources: 'product', namespace: 'admin', includes: [ACTION_INDEX, ACTION_SHOW, ACTION_UPDATE, ACTION_SAVE, ACTION_CREATE])
-
-            '/order'(resources: 'order', namespace: 'admin', includes: [ACTION_INDEX, ACTION_SHOW, ACTION_UPDATE, ACTION_SAVE])
-
-            '/productOrder'(resources: 'productOrder', namespace: 'admin', includes: [ACTION_INDEX, ACTION_SHOW, ACTION_UPDATE])
         }
 
         group('/api') {
