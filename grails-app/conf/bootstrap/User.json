@@ -44,7 +44,7 @@
     "phone": "+62857123112312323",
     "imageName": "user3.png",
     "roles": [
-      "ROLE_CUSTOMER"
+      "ROLE_USER"
     ]
   },
   {
@@ -60,7 +60,7 @@
     "phone": "+666",
     "imageName": "user3.png",
     "roles": [
-      "ROLE_CUSTOMER"
+      "ROLE_USER"
     ]
   }
 ]

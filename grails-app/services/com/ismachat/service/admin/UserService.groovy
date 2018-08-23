@@ -21,13 +21,13 @@ class UserService {
         user.status = Status.ACTIVE
         user.activationToken = keyGeneratorService.randomAlphaNumeric.nextRandom(24)
         user.registered = new LocalDateTime().toDate().getTime()
-        user.save() ?: user
+        user.save(flush: true, failOnError: true) ?: user
     }
 
     void setRole(User user, List<String> roles) {
         roles.each {
             Role role = Role.findByAuthority(it)
-            UserRole.create(user, role)
+            UserRole.create(user, role, true)
         }
     }
 }

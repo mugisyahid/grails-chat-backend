@@ -111,8 +111,8 @@ environments:
         dataSource:
             dbCreate: create-drop
             url: jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
-        emailFrom: 'noreply-ganteng@tukangjait.com'
-        clientDomain: 'localhost:4101/activation/'
+        emailFrom: 'noreply-ganteng@ismachat.com'
+        clientDomain: 'localhost:4000/activation/'
     test:
         dataSource:
             dbCreate: update
@@ -121,8 +121,8 @@ environments:
         grails.plugin.springsecurity:
           active: true          # enable/disable springsecurity
           debug.useFilter: true  #logging filter
-        emailFrom: 'noreply-ganteng@tukangjait.com'
-        clientDomain: 'https://sandang2.herokuapp.com/activation/'
+        emailFrom: 'noreply-ganteng@ismachat.com'
+        clientDomain: 'https://ismachat.herokuapp.com/activation/'
         dataSource:
             dbCreate: update
             url: jdbc:h2:mem:prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE

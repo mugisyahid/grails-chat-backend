@@ -8,8 +8,8 @@
     "description": "Administrator of an account"
   },
   {
-    "authority": "ROLE_CUSTOMER",
-    "description": "Customer Role, can order and create konveksi"
+    "authority": "ROLE_USER",
+    "description": "User kind of roles"
   },
   {
     "authority": "ROLE_ANONYMOUS",
